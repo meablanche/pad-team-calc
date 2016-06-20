@@ -17,7 +17,7 @@ PAD Calculator tool available for free on Google Spreadsheets
 
 goals:
   - integration with data from padherder to easily retrieve user data
-  - add support for new features such as multiplayer, ie: user team + friend team
+  - add support for new features such as multiplayer, eg: user team + friend team
 
 usage:
   - you can use this open source code to create a standalone app if you desire.

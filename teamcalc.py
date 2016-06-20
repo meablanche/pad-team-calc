@@ -32,13 +32,17 @@ import sys
 DATAPATH = './.data/'
 NPYEXT = '.npy'
 
+# user related stuff
+PH_ANCHOR = 'https://www.padherder.com'
+PH_USER_API = '/user-api/'
+USERNAME = 'meacabre'
+
 # dict of urls to request jsons from
 urls = {
   'active_skills' : 'https://www.padherder.com/api/active_skills/',
   'awakenings'    : 'https://www.padherder.com/api/awakenings/',
   'leader_skills' : 'https://www.padherder.com/api/leader_skills/',
   'monsters'      : 'https://www.padherder.com/api/monsters/'
-  #'https://www.padherder.com//user-api/profile/44243/'
 }
 
 # define some string dtypes outside so we can easily reuse them appropriately
@@ -110,6 +114,9 @@ dtypes = {
 
 # dict to keep all game data in
 dataDict = {}
+
+# dict to keep user data in
+userDataDict = {}
 
 # keep a global index around so leader skills with 'data' keys can use it to point to
 #   their respective 'data' data in their sublist
